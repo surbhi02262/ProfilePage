@@ -1,0 +1,49 @@
+*{
+  padding:0;
+  margin:0;
+  text-decoration: none;
+  outline:none;
+  color:inherit;
+}
+body{
+  background: rgba(250, 250, 255, 0.28);
+}
+a,a:hover{
+  cursor: pointer;
+  text-decoration: none!important;
+}
+  .center-container {
+    display: flex;
+    position: relative;
+    top:50%;
+    flex-direction: column;
+    padding: 20px;
+  }
+  button{
+    padding:10px;
+    margin:10px 0px;
+    border:1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+
+  }
+  .login-container{
+    background: url('../Images/back.jpeg');
+    background-size: cover;
+  }
+  .header-title{
+    font-size: 23px;
+    font-weight: bold;
+    padding:10px 0px;
+  }
+  .button-container{
+    padding:20px 0px;
+  }
+  .button-container button{
+    background: #3F51B5;
+    color:white;
+  }
+  .button-container button:hover{
+    background: #3F51B5;
+    color:white;
+  }
