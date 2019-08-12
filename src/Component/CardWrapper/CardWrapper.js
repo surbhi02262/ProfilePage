@@ -4,10 +4,10 @@ import {withStyles} from '@material-ui/core/styles';
 
 const styles = {
     card: {
-        border: '2px solid #3F51B5',
         color: '#3F51B5',
-        textAlign: 'center',
+        // textAlign: 'center',
         padding: '4px',
+        margin:'10px',
     },
 }
 class CardWrapper extends Component{

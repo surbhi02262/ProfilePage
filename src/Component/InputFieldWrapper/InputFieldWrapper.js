@@ -22,7 +22,7 @@ class InputFieldWrapper extends Component {
         })
     }
     render(){
-        const{name,label,value,classes,type,inputClasses} = this.props;
+        const{name,label,classes,type,inputClasses} = this.props;
         return (
             <div className={clx(classes.flex,inputClasses)}>
             <TextField

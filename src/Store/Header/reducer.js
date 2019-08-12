@@ -1,8 +1,9 @@
-import {SET_HEADER_TITLE} from '../typeConstants';
+import {SET_HEADER_TITLE, LOADING} from '../typeConstants';
 
 const initialState={
     appName:"Facebook",
-    headerTitle:"Home"
+    headerTitle:"Home",
+    loading: true
 }
 
 export default (state=initialState,action) =>{
@@ -11,6 +12,12 @@ export default (state=initialState,action) =>{
             return {
                 ...state,
                 headerTitle: action.headerTitle
+            }
+        }
+        case LOADING: {
+            return {
+                ...state,
+                loading: action.status
             }
         }
         default :{

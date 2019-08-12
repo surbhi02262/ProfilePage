@@ -4,7 +4,7 @@ import InputFieldWrapper from '../InputFieldWrapper/InputFieldWrapper';
 import {Grid} from '@material-ui/core';
 import ButtonWrapper from '../ButtonWrapper/ButtonWrapper';
 import {connect} from 'react-redux';
-import {validateLogin} from '../../Store/Login/actions';
+import {validateLogin} from '../../Store/Auth/actions';
 import {Redirect} from 'react-router-dom';
 
 class Login extends Component{
@@ -26,7 +26,7 @@ class Login extends Component{
     render(){
         const{children,isAuth,error} = this.props;
         if(isAuth){
-            return <Redirect to="/home"/>
+            return <Redirect to="/"/>
         }
         return (
             <>
@@ -48,8 +48,8 @@ const mapStateToProps = (state) =>({
     isAuth: state.Login.isAuthenticated,
     error:state.Login.errorMessage
 })
-const mapDisptachToProps = ({
+const mapDisptachToProps = {
     validateLogin
-})
+}
 
 export default connect(mapStateToProps,mapDisptachToProps)(Login);

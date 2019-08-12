@@ -8,14 +8,17 @@ const styles = theme => ({
     button: {
       margin: theme.spacing.unit,
     },
+    root:{
+        padding:'7px',
+    },
 })
 
 class ButtonWrapper extends Component{
     render(){
-        const{children,onClick} = this.props;
+        const{children,onClick,classes} = this.props;
         return (
             <div className="button-container">
-                <Button {...this.props} onClick={onClick}>
+                <Button {...this.props} onClick={onClick} className={classes.root}>
                     {children}
                 </Button>
             </div>
